@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+}
+
+.headerbtn {
+    position: absolute;
+    right: 20px;
+    display: flex;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
+}
+
+section header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+section header .logo {
+    position: relative;
+    font-size: 2em;
+    color: #000000;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+section header .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(images/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+section .bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+section .work {
+    position: absolute;
+    bottom: 35;
+    right: 100px;
+    max-height: 62%;
+    z-index: 100;
+}
+
+section .content {
+    position: absolute;
+    left: 100px;
+    max-width: 600px;
+    z-index: 10;
+}
+
+.headerbtn button {
+    font-size: 15px;
+    margin: 0px 5px;
+}
+
+#cms-btn {
+    visibility: hidden;
+}
+
+#contwork {
+    visibility: visible;
+}
+
+#contform {
+    visibility: visible;
+}
+
+#contform {
+    visibility: hidden;
+}
+
+#onlylogin {
+    visibility: hidden;
+}
+
+section .content h2 {
+    font-size: 3.5em;
+    color: #000000;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+section .content h2 span {
+    font-weight: 800;
+    font-size: 3.5em;
+    letter-spacing: 5px;
+}
+
+section .content p {
+    color: #000000;
+    margin-top: -15px;
+}
+
+section .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+section .textBlocks {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+}
+
+section .textBlocks .block {
+    position: relative;
+    padding: 15px;
+    border-radius: 25px;
+    margin-right: 40px;
+    max-width: 500px;
+    transition: 0.7s;
+    background: rgba(72, 82, 67, 0.7);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+section .textBlocks .block:hover {
+    box-shadow: inset 0 0 10px #000000;
+}
+
+section .textBlocks .block h3 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+section .textBlocks .block p {
+    color: #fff;
+}
+
+
+/**login Registration css***/
+
+section .form-box {
+    width: 380px;
+    height: 520px;
+    top: 30px;
+    position: relative;
+    margin: 0px auto;
+    border-radius: 25px;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+section .form-box:hover {
+    box-shadow: inset 2px 1px 10px #000000;
+}
+
+section .form-box .button-box {
+    width: 220px;
+    margin: 20px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #867d86;
+    border-radius: 30px;
+}
+
+.toggle-btn {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #afa7aa, #42413e);
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.social-icons img {
+    width: 100px;
+    height: 100px;
+    margin: 10px 90px;
+    box-shadow: 0 0 20px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px rgba(68, 68, 68, 0.6);
+}
+
+section .form-box .input-group {
+    margin: 10px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+section .form-box .input-group .input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+input[type="reset"] {
+    bottom: 10px;
+    top: 5px;
+}
+
+input[type="checkbox"] {
+    margin: 10px 0px;
+}
+
+label {
+    margin: 10px 4px;
+    font-size: 14px;
+    color: #221b1bce;
+}
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    background: linear-gradient(to right, #c9bec2, #42413e);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+.submit-btn-click {
+    padding: 10px 30px;
+    width: 85%;
+    padding: 0px 30px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    background: linear-gradient(to right, #c9bec2, #42413e);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+.submit-btn:hover,
+.submit-btn-click:hover {
+    box-shadow: inset 2px 1px 10px #000000;
+}
+
+
+/*
+.check-box {
+    margin: 60px 30px 40px 10px;
+    margin-top: 10px;
+}*/
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+}
+
+.form-box a {
+    cursor: pointer;
+}
+
+.form-box a:hover {
+    color: blue;
+}
